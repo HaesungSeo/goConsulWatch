@@ -55,7 +55,7 @@ func main() {
 
     flag.Parse()
 
-    cfg, err := goConsulWatch.NewCache(*addr, *keyType, *key)
+    cfg, err := goConsulWatch.New(*addr, *keyType, *key)
     if err != nil {
         fmt.Printf("ERROR: %s\n", err)
         return
